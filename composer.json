@@ -1,0 +1,41 @@
+{
+    "name": "kiprasbiel/logging-for-ms-teams",
+    "description": "Laravel package for integrating logging for MS Teams just like built in logger for Slack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kipras Bielinskas",
+            "email": "bielkakb@gmail.com",
+            "homepage": "https://github.com/kiprasbiel"
+        }
+    ],
+    "homepage": "https://github.com/kiprasbiel/logging-for-ms-teams",
+    "keywords": ["Laravel", "LoggingForMsTeams"],
+    "require": {
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kiprasbiel\\LoggingForMsTeams\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kiprasbiel\\LoggingForMsTeams\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kiprasbiel\\LoggingForMsTeams\\LoggingForMsTeamsServiceProvider"
+            ],
+            "aliases": {
+                "LoggingForMsTeams": "Kiprasbiel\\LoggingForMsTeams\\Facades\\LoggingForMsTeams"
+            }
+        }
+    }
+}
